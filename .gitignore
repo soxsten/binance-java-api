@@ -99,3 +99,4 @@ target/
 .*
 !/.gitignore
 /nbproject/
+/src/test/java/com/binance/api/config.properties

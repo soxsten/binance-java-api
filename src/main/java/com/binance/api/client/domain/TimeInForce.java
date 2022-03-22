@@ -13,7 +13,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public enum TimeInForce {
-  GTC,
-  IOC,
-  FOK
+    /** GTC (Действует до отмены): ордер будет активен до тех пор, пока не будет исполнен или отменен. */
+    GTC,
+    /** IOC (Немедленно или отменить): ордер немедленно исполняется на максимально возможную сумму,
+     * а оставшаяся часть отменяется. */
+    IOC,
+    /** FOK (Исполнить или отменить): ордер должен быть полностью исполнен немедленно или не исполнен вообще. */
+    FOK
 }

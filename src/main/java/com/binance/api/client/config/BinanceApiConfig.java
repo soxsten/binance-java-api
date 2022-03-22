@@ -8,7 +8,7 @@ public class BinanceApiConfig {
 	/**
 	 * Base domain for URLs.
 	 */
-	private static String BASE_DOMAIN = "binance.com";
+	private static final String BASE_DOMAIN = "binance.com";
 
     /**
      * Spot Test Network URL.
@@ -26,15 +26,6 @@ public class BinanceApiConfig {
      * true for websocket streaming; false for no streaming.
      */
     public static boolean useTestnetStreaming;
-
-	/**
-	 * Set the URL base domain name (e.g., binance.com).
-	 *
-	 * @param baseDomain Base domain name
-	 */
-	public static void setBaseDomain(final String baseDomain) {
-		BASE_DOMAIN = baseDomain;
-	}
 
 	/**
 	 * Get the URL base domain name (e.g., binance.com).
